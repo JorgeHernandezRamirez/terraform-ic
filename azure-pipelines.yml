@@ -7,6 +7,7 @@ pool:
 steps:
 
 - script: |
+    dig s3.direct.eu-es.cloud-object-storage.appdomain.cloud
     echo "Region: $IC_REGION"
     echo "APIKEY: $IC_API_KEY"
     echo "Initializing Terraform..."
