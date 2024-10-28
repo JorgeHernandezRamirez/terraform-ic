@@ -8,6 +8,7 @@ steps:
 
 - script: |
     echo "Region: $IC_REGION"
+    echo "APIKEY: $IC_API_KEY"
     echo "Initializing Terraform..."
     terraform init
     
