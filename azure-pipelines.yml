@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool: 
+  name: "ic-pool" 
+
+steps:
+
+- script: |
+    echo "Initializing Terraform..."
+    terraform init
+    
+    echo "Applying Terraform configuration..."
+    terraform apply -auto-approve
+  displayName: 'Run Terraform Init and Apply'
