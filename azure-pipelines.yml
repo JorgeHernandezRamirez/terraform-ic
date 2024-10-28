@@ -7,6 +7,7 @@ pool:
 steps:
 
 - script: |
+    echo "Region: $IC_REGION"
     echo "Initializing Terraform..."
     terraform init
     
